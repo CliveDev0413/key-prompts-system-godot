@@ -3,22 +3,31 @@
 ![keyprompt-showcase](media/keyprompt-showcase.gif)
 
 Implement key/button prompts into godot easily.
-This system currently supports key prompts for keyboard and mouse, PS4 controllers, and Xbox One controllers. Xbox One controller prompts will be used for controllers that are unsupported.
+This system currently supports key prompts for:
+
+- Keyboard and mouse
+- PS4 controller
+- Xbox One controller
+
+Xbox One controller prompts will be used for controllers that are unsupported.
+
+By the way. I didn't make these key/button prompt textures. I got them from [here](https://thoseawesomeguys.com/prompts/). If you want to help add more key/button prompts to this project, you can also get key/button prompts from there.
 
 # Tutorial
 I will now teach you how to implement the key prompt system
 
 # For the GDScript version
-1. Drag and rop the `Key Prompts System GDScript` folder into your game. Make sure it isn't inside of any other folders. 
-2. Inside the `Key Prompts System GDScript` folder, you will see a file named `KeyPrompt.tscn`. Drag it into your level/scene.
-3. Resize it if you want
-4. Click on it and set the action variable.
+1. To the side of this Github page, you should see the releases. Download the latest release.
+2. Drag and rop the `Key Prompts System GDScript` folder into your game. Make sure it isn't inside of any other folders. 
+3. Inside the `Key Prompts System GDScript` folder, you will see a file named `KeyPrompt.tscn`. Drag it into your level/scene.
+4. Resize it if you want
+5. Click on it and set the action variable.
 
 The action variable is supposed to be set to the name of the action you want the prompt to show. For example, the `jump` action which uses the **space bar** or the **x/a button on a controller**
 
 ![action-example](media/action-example.png)
 
-5. After setting the action variable, you are ready to go!
+6. After setting the action variable, you are ready to go!
 
 # For the C# verison
 1. Follow the steps of the GDScript version but instead of using `Key Prompts System GDScript` folder, use the `Key Prompts System CSharp` folder.
