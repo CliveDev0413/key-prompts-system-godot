@@ -14,6 +14,7 @@ __meta__ = {
 }
 
 [node name="Blank" type="Sprite" parent="."]
+visible = false
 texture = ExtResource( 5 )
 
 [node name="Keyboard_Dark" type="Sprite" parent="."]
