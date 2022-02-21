@@ -27,7 +27,7 @@ The action variable is supposed to be set to the name of the action you want the
 
 ![action-example](media/action-example.png)
 
-6. After setting the action variable, you are ready to go!
+6. After setting the action variable, go to the [exporting section](#when-exporting) to know about what to do when exporting you're game.
 
 # For the C# verison
 1. Follow the steps of the GDScript version but instead of using `Key Prompts System GDScript` folder, use the `Key Prompts System CSharp` folder.
@@ -35,6 +35,11 @@ The action variable is supposed to be set to the name of the action you want the
 Now you have to install the [Newtonsoft Json.Net Nuget Package](https://www.newtonsoft.com/json).
 If you're using Visual Studio Community, just use the Nuget Package Manager.
 If you're using Visual Studio Code, just use [this Nuget Package extension](https://marketplace.visualstudio.com/items?itemName=jmrog.vscode-nuget-package-manager) or look for another one.
+
+# When exporting
+Add `*.json` to the resources tab
+
+![json-example](media/json-example.png)
 
 # Questions you would probably ask
 
