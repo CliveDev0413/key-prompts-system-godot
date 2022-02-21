@@ -1,4 +1,4 @@
-# Godot key/button prompts system
+![transparent-logo](media/transparent-logo.png)
 
 ![keyprompt-showcase](media/keyprompt-showcase.gif)
 
