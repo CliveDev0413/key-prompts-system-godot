@@ -36,5 +36,16 @@ Now you have to install the [Newtonsoft Json.Net Nuget Package](https://www.newt
 If you're using Visual Studio Community, just use the Nuget Package Manager.
 If you're using Visual Studio Code, just use [this Nuget Package extension](https://marketplace.visualstudio.com/items?itemName=jmrog.vscode-nuget-package-manager) or look for another one.
 
+# Questions you would probably ask
+
+**Q. How do I customize the look of the prompts?**
+A. Well.. The best and easiest way I could think of is if you just draw or add images on top of the key prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder.
+
+**Q. Will you add more controller prompts?**
+A. Im not sure. I only have a PS4 controller...
+
+**Q. What will my dinner be...**
+A. Idk, what do you like?
+
 # Licensing
-The key prompts system is free for commercial and personal uses. You can also remix and edit the code fore your personal uses.
+The key/button prompt system is free for commercial and personal uses. You can also remix and edit the code fore your personal uses.
