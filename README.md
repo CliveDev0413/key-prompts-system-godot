@@ -1,4 +1,4 @@
-<p align="center"><img src="/media/transparent-logo.png" alt="transparent-logo" width="500px" height="250px"></p>
+<p align="center"><img src="/media/keyprompts-logo-transparent.png" alt="transparent-logo" width="500px" height="250px"></p>
 
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
