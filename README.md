@@ -1,6 +1,6 @@
 <p align="center"><img src="/media/transparent-logo.png" alt="transparent-logo" width="500px" height="250px"></p>
 
-<p align="center" style="border-radius:100px"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
+<p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
 Implement key/button prompts into godot easily.
 This system currently supports key prompts for:
