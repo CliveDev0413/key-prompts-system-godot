@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Key Prompt System/C#/KeyPrompt.cs" type="Script" id=1]
-[ext_resource path="res://Key Prompt System/ButtonPromptTextures/ps4.png" type="Texture" id=2]
-[ext_resource path="res://Key Prompt System/ButtonPromptTextures/keyboard_light.png" type="Texture" id=3]
-[ext_resource path="res://Key Prompt System/ButtonPromptTextures/xbox_one.png" type="Texture" id=4]
-[ext_resource path="res://Key Prompt System/ButtonPromptTextures/Blank_Black_Normal.png" type="Texture" id=5]
-[ext_resource path="res://Key Prompt System/ButtonPromptTextures/keyboard_dark.png" type="Texture" id=6]
+[ext_resource path="res://Key Prompts System CSharp/KeyPrompt.cs" type="Script" id=1]
+[ext_resource path="res://Key Prompts System CSharp/ButtonPromptTextures/ps4.png" type="Texture" id=2]
+[ext_resource path="res://Key Prompts System CSharp/ButtonPromptTextures/keyboard_light.png" type="Texture" id=3]
+[ext_resource path="res://Key Prompts System CSharp/ButtonPromptTextures/xbox_one.png" type="Texture" id=4]
+[ext_resource path="res://Key Prompts System CSharp/ButtonPromptTextures/Blank_Black_Normal.png" type="Texture" id=5]
+[ext_resource path="res://Key Prompts System CSharp/ButtonPromptTextures/keyboard_dark.png" type="Texture" id=6]
 
 [node name="KeyPrompt" type="Node2D"]
 script = ExtResource( 1 )
@@ -14,7 +14,6 @@ __meta__ = {
 }
 
 [node name="Blank" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 5 )
 
 [node name="Keyboard_Dark" type="Sprite" parent="."]

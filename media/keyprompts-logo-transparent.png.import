@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/xbox_one.png-097dfb53cc68b6de191f7ddfd72adb85.stex"
+path="res://.import/keyprompts-logo-transparent.png-98cb98baf4bdf89db34d9e8182ae857e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Key Prompt System/ButtonPromptTextures/xbox_one.png"
-dest_files=[ "res://.import/xbox_one.png-097dfb53cc68b6de191f7ddfd72adb85.stex" ]
+source_file="res://media/keyprompts-logo-transparent.png"
+dest_files=[ "res://.import/keyprompts-logo-transparent.png-98cb98baf4bdf89db34d9e8182ae857e.stex" ]
 
 [params]
 

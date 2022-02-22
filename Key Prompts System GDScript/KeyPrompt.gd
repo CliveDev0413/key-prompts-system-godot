@@ -10,9 +10,9 @@ var connected_controller;
 
 export(String) var ACTION = "";
 
-export(String) var KEYBOARD_FRAMES_JSON_PATH = "res://Key Prompt System/ButtonPromptTextures/keyboardFrames.json";
-export(String) var PS4_FRAMES_JSON_PATH = "res://Key Prompt System/ButtonPromptTextures/ps4Frames.json";
-export(String) var XBOX_ONE_FRAMES_JSON_PATH = "res://Key Prompt System/ButtonPromptTextures/xboxOneFrames.json";
+export(String) var KEYBOARD_FRAMES_JSON_PATH = "res://Key Prompts System GDScript/ButtonPromptTextures/keyboardFrames.json";
+export(String) var PS4_FRAMES_JSON_PATH = "res://Key Prompts System GDScript/ButtonPromptTextures/ps4Frames.json";
+export(String) var XBOX_ONE_FRAMES_JSON_PATH = "res://Key Prompts System GDScript/ButtonPromptTextures/xboxOneFrames.json";
 
 export(bool) var LIGHT_THEMED_KEYBRD_KEYS: bool;
 
@@ -153,9 +153,9 @@ func load_json_files():
 	ps4_frames_json = File.new();
 	xbox_one_frames_json = File.new();
 
-	assert(keyboard_frames_json.file_exists(KEYBOARD_FRAMES_JSON_PATH), "The variable 'KEYBOARD_FRAMES_JSON_PATH' is not assigned");
-	assert(ps4_frames_json.file_exists(PS4_FRAMES_JSON_PATH), "The variable 'PS4_FRAMES_JSON_PATH' is not assigned");
-	assert(xbox_one_frames_json.file_exists(XBOX_ONE_FRAMES_JSON_PATH), "The variable 'PS4_FRAMES_JSON_PATH' is not assigned");
+	assert(keyboard_frames_json.file_exists(KEYBOARD_FRAMES_JSON_PATH), "The variable 'KEYBOARD_FRAMES_JSON_PATH' is not assigned or is invalid");
+	assert(ps4_frames_json.file_exists(PS4_FRAMES_JSON_PATH), "The variable 'PS4_FRAMES_JSON_PATH' is not assigned or is invalid");
+	assert(xbox_one_frames_json.file_exists(XBOX_ONE_FRAMES_JSON_PATH), "The variable 'PS4_FRAMES_JSON_PATH' is not assigned or is invalid");
 
 	keyboard_frames_json.open(KEYBOARD_FRAMES_JSON_PATH, File.READ);
 	ps4_frames_json.open(PS4_FRAMES_JSON_PATH, File.READ);

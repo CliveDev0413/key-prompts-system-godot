@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/keyboard_light.png-42c7777b70421b9e147c528521d8332e.stex"
+path="res://.import/ground.png-7a99ae01da849776bfad53469f7415eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Key Prompt System/ButtonPromptTextures/keyboard_light.png"
-dest_files=[ "res://.import/keyboard_light.png-42c7777b70421b9e147c528521d8332e.stex" ]
+source_file="res://Key Prompts System CSharp/Demo/ground.png"
+dest_files=[ "res://.import/ground.png-7a99ae01da849776bfad53469f7415eb.stex" ]
 
 [params]
 

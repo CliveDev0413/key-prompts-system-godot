@@ -53,4 +53,4 @@ Im not sure. I only have a PS4 controller...
 Idk, what do you like?
 
 # Licensing
-The key/button prompt system is free for commercial and personal uses. You can also remix and edit the code fore your personal uses.
+The key/button prompt system is free for commercial and personal projects. You can also remix and edit the code for your personal uses.

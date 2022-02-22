@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ps4.png-de2a012e6e2ffb7797119cf115af5d0f.stex"
+path="res://.import/action-example.png-6ac6704b826963c08ec932d85de31fe2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Key Prompt System/ButtonPromptTextures/ps4.png"
-dest_files=[ "res://.import/ps4.png-de2a012e6e2ffb7797119cf115af5d0f.stex" ]
+source_file="res://media/action-example.png"
+dest_files=[ "res://.import/action-example.png-6ac6704b826963c08ec932d85de31fe2.stex" ]
 
 [params]
 

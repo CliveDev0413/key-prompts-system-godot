@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground.png-14f8579f8c5c7b2836151cfc451c9e2c.stex"
+path="res://.import/keyboard_dark.png-afd24c9ae05b5b4fd5cb6a984f8cc90b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Key Prompt System/Demo/ground.png"
-dest_files=[ "res://.import/ground.png-14f8579f8c5c7b2836151cfc451c9e2c.stex" ]
+source_file="res://Key Prompts System GDScript/ButtonPromptTextures/keyboard_dark.png"
+dest_files=[ "res://.import/keyboard_dark.png-afd24c9ae05b5b4fd5cb6a984f8cc90b.stex" ]
 
 [params]
 

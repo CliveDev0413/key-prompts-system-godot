@@ -19,13 +19,13 @@ public class KeyPrompt : Node2D
 	public string action = "";
 
 	[Export]
-	public string keyboardFramesJsonPath = "res://ButtonPromptTextures/keyboardFrames.json";
+	public string keyboardFramesJsonPath = "res://Key Prompts System CSharp/ButtonPromptTextures/keyboardFrames.json";
 
 	[Export]
-	public string ps4FramesJsonPath = "res://ButtonPromptTextures/ps4Frames.json";
+	public string ps4FramesJsonPath = "res://Key Prompts System CSharp/ButtonPromptTextures/ps4Frames.json";
 
 	[Export]
-	public string xboxOneFramesJsonPath = "res://ButtonPromptTextures/xboxOneFrames.json";
+	public string xboxOneFramesJsonPath = "res://Key Prompts System CSharp/ButtonPromptTextures/xboxOneFrames.json";
 
 	[Export]
 	public bool lightThemedKeybrdKeys = false;
@@ -270,7 +270,7 @@ public class KeyPrompt : Node2D
 		   !ps4FramesJson.FileExists(ps4FramesJsonPath) ||
 		   !xboxOneFramesJson.FileExists(xboxOneFramesJsonPath))
 		{
-			PushError("One of the json file paths are not assigned.");
+			PushError("One of the json file paths are not assigned or is invalid.");
 			GetTree().Quit();
 		}
 	}

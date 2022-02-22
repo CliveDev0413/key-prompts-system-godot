@@ -7,4 +7,6 @@ export_presets.cfg
 .mono/
 data_*/
 
+#other
 builds/
+*.zip

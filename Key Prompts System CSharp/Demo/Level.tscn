@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Key Prompt System/Demo/ground.png" type="Texture" id=1]
-[ext_resource path="res://Key Prompt System/Demo/Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Key Prompt System/GDScript/KeyPrompt.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Key Prompts System CSharp/Demo/ground.png" type="Texture" id=1]
+[ext_resource path="res://Key Prompts System CSharp/Demo/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Key Prompts System CSharp/KeyPrompt.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 511, 75 )
@@ -40,4 +40,4 @@ __meta__ = {
 [node name="KeyPrompt" parent="." instance=ExtResource( 3 )]
 position = Vector2( 375, 380 )
 scale = Vector2( 0.3, 0.3 )
-ACTION = "jump"
+action = "ui_up"
