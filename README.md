@@ -1,4 +1,4 @@
-![transparent-logo](media/transparent-logo.png)
+<p align="center"><img src="/media/transparent-logo.png" alt="transparent-logo" width="500px" height="250px"></p>
 
 ![keyprompt-showcase](media/keyprompt-showcase.gif)
 
