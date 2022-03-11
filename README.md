@@ -56,3 +56,6 @@ Idk, what do you like?
 
 # Licensing
 The key/button prompt system is free for commercial and personal projects. You can also remix and edit the code for your personal uses.
+
+# Donations
+If you would like to donate, you can donate to [my Kofi](https://ko-fi.com/clivedev)
