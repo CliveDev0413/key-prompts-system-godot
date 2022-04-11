@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+# Key prompts system for Godot
+
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
 Implement key/button prompts into Godot easily.
