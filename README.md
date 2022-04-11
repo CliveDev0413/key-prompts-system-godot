@@ -1,6 +1,6 @@
 <p align="center"><img src="/media/keyprompts-logo-transparent.png" alt="transparent-logo" width="500px" height="250px"></p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.MD)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 [![Supported Platforms](https://img.shields.io/badge/Supported%20Platforms-Windows%2C%20macOS%2C%20X11%20(Linux%2C%20*BSD)%2C%20Android%2C%20iOS%2C%20Web-blue)](https://docs.godotengine.org/en/stable/about/faq.html#which-platforms-are-supported-by-godot)
 [![Repo Size](https://img.shields.io/github/repo-size/CliveDev0413/key-prompts-system-godot?color=red&label=Repo%20Size)](https://youtu.be/dQw4w9WgXcQ)
 [![Downloads](https://img.shields.io/github/downloads/CliveDev0413/key-prompts-system-godot/latest/total?label=Downloads%40latest)](https://github.com/CliveDev0413/key-prompts-system-godot/releases/latest)
