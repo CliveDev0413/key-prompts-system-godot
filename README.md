@@ -1,5 +1,5 @@
 <p align="center"><img src="/media/keyprompts-logo-transparent.png" alt="transparent-logo" width="500px" height="250px"></p>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(LICENSE.md)
 
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
