@@ -1,6 +1,7 @@
 <p align="center"><img src="/media/keyprompts-logo-transparent.png" alt="transparent-logo" width="500px" height="250px"></p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.MD)
+[![Supported Platforms](https://img.shields.io/badge/Supported%20Platforms-Windows%2C%20macOS%2C%20X11%20(Linux%2C%20*BSD)%2C%20Android%2C%20iOS%2C%20Web-blue)](https://docs.godotengine.org/en/stable/about/faq.html#which-platforms-are-supported-by-godot)
 
 # Key prompts system for Godot
 
