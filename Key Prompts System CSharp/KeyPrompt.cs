@@ -4,7 +4,7 @@ using static Godot.GD;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-public class KeyPrompt : Node2D
+public partial class KeyPrompt : Node2D
 {
 	enum Controllers
 	{
@@ -36,11 +36,11 @@ public class KeyPrompt : Node2D
 	Dictionary<string, int> buttons = new Dictionary<string, int>();
 
 	//Sprites
-	private Sprite blankKey;
-	private Sprite keybrdDark;
-	private Sprite keybrdLight;
-	private Sprite ps4;
-	private Sprite xboxOne;
+	private Sprite2D blankKey;
+	private Sprite2D keybrdDark;
+	private Sprite2D keybrdLight;
+	private Sprite2D ps4;
+	private Sprite2D xboxOne;
 
 	//JSON Files
 	private File keyboardFramesJson;
@@ -62,11 +62,11 @@ public class KeyPrompt : Node2D
 		ConvertAllJsonToText();    
 		
 		//Get all the sprites
-		blankKey = GetNode<Sprite>("Blank");
-		keybrdDark = GetNode<Sprite>("Keyboard_Dark");
-		keybrdLight = GetNode<Sprite>("Keyboard_Light");
-		ps4 = GetNode<Sprite>("PS4");
-		xboxOne = GetNode<Sprite>("Xbox_One");
+		blankKey = GetNode<Sprite2D>("Blank");
+		keybrdDark = GetNode<Sprite2D>("Keyboard_Dark");
+		keybrdLight = GetNode<Sprite2D>("Keyboard_Light");
+		ps4 = GetNode<Sprite2D>("PS4");
+		xboxOne = GetNode<Sprite2D>("Xbox_One");
 
 		//Get the frames of the keys
 		keyboard = JsonConvert.DeserializeObject<Dictionary<string, int>>(keyboardJsonToText);    
@@ -100,7 +100,7 @@ public class KeyPrompt : Node2D
 
 		try
 		{
-			inputs = InputMap.GetActionList(action);
+			inputs = InputMap.ActionGetEvents(action);
 		}
 		catch(Exception err)
 		{

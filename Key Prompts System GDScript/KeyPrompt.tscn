@@ -1,41 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://cj3cyrignwy3h"]
 
-[ext_resource path="res://Key Prompts System GDScript/ButtonPromptTextures/ps4.png" type="Texture" id=1]
-[ext_resource path="res://Key Prompts System GDScript/ButtonPromptTextures/keyboard_light.png" type="Texture" id=2]
-[ext_resource path="res://Key Prompts System GDScript/ButtonPromptTextures/xbox_one.png" type="Texture" id=3]
-[ext_resource path="res://Key Prompts System GDScript/ButtonPromptTextures/Blank_Black_Normal.png" type="Texture" id=4]
-[ext_resource path="res://Key Prompts System GDScript/ButtonPromptTextures/keyboard_dark.png" type="Texture" id=5]
-[ext_resource path="res://Key Prompts System GDScript/KeyPrompt.gd" type="Script" id=6]
+[ext_resource type="Texture2D" uid="uid://wuf45sm7ovxf" path="res://Key Prompts System GDScript/ButtonPromptTextures/ps4.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://d38chahtd8b6b" path="res://Key Prompts System GDScript/ButtonPromptTextures/keyboard_light.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dgxo2xycvc8wa" path="res://Key Prompts System GDScript/ButtonPromptTextures/xbox_one.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://biavrww5jqh6o" path="res://Key Prompts System GDScript/ButtonPromptTextures/Blank_Black_Normal.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bdjrmjby8p3rd" path="res://Key Prompts System GDScript/ButtonPromptTextures/keyboard_dark.png" id="5"]
+[ext_resource type="Script" path="res://Key Prompts System GDScript/KeyPrompt.gd" id="6"]
 
 [node name="KeyPrompt" type="Node2D"]
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_group_": true
-}
+script = ExtResource("6")
 
-[node name="Blank" type="Sprite" parent="."]
-texture = ExtResource( 4 )
-
-[node name="Keyboard_Dark" type="Sprite" parent="."]
+[node name="Blank" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource( 5 )
+texture = ExtResource("4")
+
+[node name="Keyboard_Dark" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5")
 hframes = 10
 vframes = 10
 
-[node name="Keyboard_Light" type="Sprite" parent="."]
+[node name="Keyboard_Light" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource( 2 )
+texture = ExtResource("2")
 hframes = 10
 vframes = 10
 
-[node name="PSFour" type="Sprite" parent="."]
+[node name="PSFour" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource( 1 )
+texture = ExtResource("1")
 hframes = 5
 vframes = 4
 
-[node name="Xbox_One" type="Sprite" parent="."]
+[node name="Xbox_One" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource( 3 )
+texture = ExtResource("3")
 hframes = 5
 vframes = 4

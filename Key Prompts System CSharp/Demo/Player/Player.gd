@@ -1,9 +1,9 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
-export(float) var GRAVITY = 2500;
-export(float) var MAX_GRAVITY = 5000;
-export(float) var MOVE_SPEED = 5000;
-export(float) var JUMP_FORCE = 20000;
+@export var GRAVITY: float = 2500;
+@export var MAX_GRAVITY: float = 5000;
+@export var MOVE_SPEED: float = 5000;
+@export var JUMP_FORCE: float = 20000;
 
 var grounded: bool;
 var motion: Vector2;
@@ -36,4 +36,7 @@ func _process(delta):
 	if !grounded:
 		motion.y += GRAVITY * delta;
 
-	motion = move_and_slide(motion, Vector2.UP);
+	set_velocity(motion)
+	set_up_direction(Vector2.UP)
+	move_and_slide()
+	motion = velocity;
