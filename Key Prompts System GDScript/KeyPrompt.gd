@@ -2,7 +2,9 @@ extends Node2D
 
 enum Controllers{
 	ps4,
+	ps5,
 	xboxOne,
+	xboxSeries
 }
 
 var using_keyboard: bool;
@@ -12,7 +14,9 @@ var connected_controller;
 
 @export var KEYBOARD_FRAMES_JSON_PATH: String = "res://Key Prompts System GDScript/ButtonPromptTextures/keyboardFrames.json";
 @export var PS4_FRAMES_JSON_PATH: String = "res://Key Prompts System GDScript/ButtonPromptTextures/ps4Frames.json";
+@export var PS5_FRAMES_JSON_PATH: String = "res://Key Prompts System GDScript/ButtonPromptTextures/ps5Frames.json";
 @export var XBOX_ONE_FRAMES_JSON_PATH: String = "res://Key Prompts System GDScript/ButtonPromptTextures/xboxOneFrames.json";
+@export var XBOX_SERIES_FRAMES_JSON_PATH: String = "res://Key Prompts System GDScript/ButtonPromptTextures/xboxSeriesFrames.json";
 
 @export var LIGHT_THEMED_KEYBRD_KEYS: bool;
 
@@ -26,17 +30,23 @@ var buttons: Dictionary;
 @onready var keybrd_dark = $Keyboard_Dark;
 @onready var keybrd_light = $Keyboard_Light;
 @onready var ps4 = $PSFour;
+@onready var ps5 = $PSFive;
 @onready var xbox_one = $Xbox_One;
+@onready var xbox_series = $Xbox_Series;
 
 # JSON Files
 var keyboard_frames_json: FileAccess;
 var ps4_frames_json: FileAccess;
+var ps5_frames_json: FileAccess;
 var xbox_one_frames_json: FileAccess;
+var xbox_series_frames_json: FileAccess;
 
 # JSON Files but text
 var keyboard_json_to_text: String;
 var ps4_json_to_text: String;
+var ps5_json_to_text: String;
 var xbox_one_json_to_text: String;
+var xbox_series_json_to_text: String;
 
 
 func _ready():
@@ -124,6 +134,23 @@ func process_inputs(_controller_name):
 				return;
 		
 			ps4.frame = buttons[str(button_properties.button_index)];
+			
+		elif connected_controller == Controllers.ps5:
+			ps5.visible = true;
+
+			if joystick_properties != null:
+				if joystick_properties.axis == 0 || joystick_properties.axis == 1:
+					ps5.frame = buttons["left-stick"];
+				elif joystick_properties.axis == 2 || joystick_properties.axis == 3:
+					ps5.frame = buttons["right-stick"];
+				elif joystick_properties.axis == 4:
+					ps5.frame = buttons["left-trigger"];
+				elif joystick_properties.axis == 5:
+					ps5.frame = buttons["right-trigger"];
+				return;
+		
+			ps5.frame = buttons[str(button_properties.button_index)];
+			
 		elif connected_controller == Controllers.xboxOne:
 			xbox_one.visible = true;
 
@@ -133,25 +160,51 @@ func process_inputs(_controller_name):
 				elif joystick_properties.axis == 2 || joystick_properties.axis == 3:
 					xbox_one.frame = buttons["right-stick"];
 				elif joystick_properties.axis == 4:
-					ps4.frame = buttons["left-trigger"];
+					xbox_one.frame = buttons["left-trigger"];
 				elif joystick_properties.axis == 5:
-					ps4.frame = buttons["right-trigger"];
+					xbox_one.frame = buttons["right-trigger"];
 				return;
 		
 			xbox_one.frame = buttons[str(button_properties.button_index)];	
+			
+		elif connected_controller == Controllers.xboxSeries:
+			xbox_series.visible = true;
+
+			if joystick_properties != null:
+				if joystick_properties.axis == 0 || joystick_properties.axis == 1:
+					xbox_series.frame = buttons["left-stick"];
+				elif joystick_properties.axis == 2 || joystick_properties.axis == 3:
+					xbox_series.frame = buttons["right-stick"];
+				elif joystick_properties.axis == 4:
+					xbox_series.frame = buttons["left-trigger"];
+				elif joystick_properties.axis == 5:
+					xbox_series.frame = buttons["right-trigger"];
+				return;
+		
+			xbox_series.frame = buttons[str(button_properties.button_index)];	
 
 func get_controller_type(_controller_name: String):
 	match(_controller_name.to_lower()):
 		"ps4 controller":
 			var test_json_conv = JSON.new()
 			test_json_conv.parse(ps4_json_to_text);
-			buttons = test_json_conv.get_data()
+			buttons = test_json_conv.get_data();
 			connected_controller = Controllers.ps4;
+		"ps5 controller":
+			var test_json_conv = JSON.new();
+			test_json_conv.parse(ps5_json_to_text);
+			buttons = test_json_conv.get_data();
+			connected_controller = Controllers.ps5;
 		"xbox one controller":
 			var test_json_conv = JSON.new()
 			test_json_conv.parse(xbox_one_json_to_text);
 			buttons = test_json_conv.get_data()
 			connected_controller = Controllers.xboxOne;
+		"xbox series controller":
+			var test_json_conv = JSON.new()
+			test_json_conv.parse(xbox_series_json_to_text);
+			buttons = test_json_conv.get_data()
+			connected_controller = Controllers.xboxSeries;
 		"xinput gamepad":
 			var test_json_conv = JSON.new()
 			test_json_conv.parse(xbox_one_json_to_text);
@@ -168,23 +221,31 @@ func hide_all_prompts():
 	keybrd_dark.visible = false;
 	keybrd_light.visible = false;
 	ps4.visible = false;
+	ps5.visible = false;
 	xbox_one.visible = false;
+	xbox_series.visible = false;
 
 func load_json_files():
 	
 	#Checking if the JSON files are okay before reading them
-	assert(FileAccess.file_exists(KEYBOARD_FRAMES_JSON_PATH)) ;
-	assert(FileAccess.file_exists(PS4_FRAMES_JSON_PATH)) ;
-	assert(FileAccess.file_exists(XBOX_ONE_FRAMES_JSON_PATH)) ;
+	assert(FileAccess.file_exists(KEYBOARD_FRAMES_JSON_PATH));
+	assert(FileAccess.file_exists(PS4_FRAMES_JSON_PATH));
+	assert(FileAccess.file_exists(PS5_FRAMES_JSON_PATH));
+	assert(FileAccess.file_exists(XBOX_ONE_FRAMES_JSON_PATH));
+	assert(FileAccess.file_exists(XBOX_SERIES_FRAMES_JSON_PATH));
 	
 	keyboard_frames_json = FileAccess.open(KEYBOARD_FRAMES_JSON_PATH, FileAccess.READ);
 	ps4_frames_json = FileAccess.open(PS4_FRAMES_JSON_PATH, FileAccess.READ);
+	ps5_frames_json = FileAccess.open(PS5_FRAMES_JSON_PATH, FileAccess.READ);
 	xbox_one_frames_json = FileAccess.open(XBOX_ONE_FRAMES_JSON_PATH, FileAccess.READ);
+	xbox_series_frames_json = FileAccess.open(XBOX_SERIES_FRAMES_JSON_PATH, FileAccess.READ);
 	
 func convert_all_json_to_text():
 	keyboard_json_to_text = keyboard_frames_json.get_as_text();
 	ps4_json_to_text = ps4_frames_json.get_as_text();
+	ps5_json_to_text = ps5_frames_json.get_as_text();
 	xbox_one_json_to_text = xbox_one_frames_json.get_as_text();
+	xbox_series_json_to_text = xbox_series_frames_json.get_as_text();
 
 func mouse_button_index_to_name(button_index: int):
 	match(button_index):

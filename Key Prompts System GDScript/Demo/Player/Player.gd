@@ -27,8 +27,7 @@ func _process(delta):
 		motion.x = lerp(motion.x, 0.0, 0.2);
 	
 	if Input.is_action_just_pressed("jump") && grounded:
-		print("jump");
-		motion.y = -input_vector.y * -JUMP_FORCE;
+		motion.y = input_vector.y * -JUMP_FORCE;
 	
 	if !grounded:
 		motion.y += GRAVITY;

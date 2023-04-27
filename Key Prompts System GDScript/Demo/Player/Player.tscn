@@ -8,7 +8,10 @@ size = Vector2(16, 16)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1")
+GRAVITY = 60.0
+MAX_GRAVITY = 1000.0
 MOVE_SPEED = 200.0
+JUMP_FORCE = 700.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2")

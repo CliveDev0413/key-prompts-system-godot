@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cj3cyrignwy3h" path="res://Key Prompts System GDScript/KeyPrompt.tscn" id="3"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(1023.75, 152)
+size = Vector2(2561, 24)
 
 [node name="Level" type="Node2D"]
 
@@ -16,12 +16,12 @@ position = Vector2(467, 427)
 position = Vector2(513, 568)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground"]
-position = Vector2(-1, -44)
-scale = Vector2(8, 2.375)
+position = Vector2(-3.49998, 57.692)
+scale = Vector2(20, 5.55288)
 texture = ExtResource("1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(-0.875, -44)
+position = Vector2(-3.5, -108)
 shape = SubResource("1")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]

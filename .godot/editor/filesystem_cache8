@@ -1,6 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682531215
-default_env.tres::Environment::6101912613185833239::1682531202::0::1::::<><>::
+::res://::1682585235
+default_env.tres::Environment::6101912613185833239::1682585235::0::1::::<><>::
 icon.png::CompressedTexture2D::4640088425534978774::1682499245::1682531115::1::::<><>::
 LICENSE.md::TextFile::-1::1682499245::0::1::::<><>::
 README.md::TextFile::-1::1682499245::0::1::::<><>::
@@ -22,25 +22,28 @@ Level.tscn::PackedScene::-1::1682531115::0::1::::<><>::res://Key Prompts System 
 block.png::CompressedTexture2D::6728908729557455816::1682499245::1682531115::1::::<><>::
 Player.gd::GDScript::-1::1682531115::0::1::::<>CharacterBody2D<>::
 Player.tscn::PackedScene::-1::1682531115::0::1::::<><>::res://Key Prompts System CSharp/Demo/Player/Player.gd<>res://Key Prompts System CSharp/Demo/Player/block.png
-::res://Key Prompts System GDScript/::1682531202
-KeyPrompt.gd::GDScript::-1::1682531115::0::1::::<>Node2D<>::
-KeyPrompt.tscn::PackedScene::5462508735827683807::1682531202::0::1::::<><>::uid://wuf45sm7ovxf<>uid://d38chahtd8b6b<>uid://dgxo2xycvc8wa<>uid://biavrww5jqh6o<>uid://bdjrmjby8p3rd<>res://Key Prompts System GDScript/KeyPrompt.gd
-::res://Key Prompts System GDScript/ButtonPromptTextures/::1682531115
+::res://Key Prompts System GDScript/::1682585235
+KeyPrompt.gd::GDScript::-1::1682584816::0::1::::<>Node2D<>::
+KeyPrompt.tscn::PackedScene::5462508735827683807::1682585235::0::1::::<><>::uid://wuf45sm7ovxf<>uid://d38chahtd8b6b<>uid://dgxo2xycvc8wa<>uid://biavrww5jqh6o<>uid://bdjrmjby8p3rd<>res://Key Prompts System GDScript/KeyPrompt.gd<>uid://bfrqjcsd67e0c
+::res://Key Prompts System GDScript/ButtonPromptTextures/::1682585445
 Blank_Black_Normal.png::CompressedTexture2D::2949238039016967192::1682499245::1682531115::1::::<><>::
 keyboardFrames.json::JSON::-1::1682531115::0::1::::<><>::
 keyboard_dark.png::CompressedTexture2D::2616620708187752317::1682499245::1682531115::1::::<><>::
 keyboard_light.png::CompressedTexture2D::9192808085053261947::1682499245::1682531115::1::::<><>::
 ps4.png::CompressedTexture2D::1585799092200529239::1682499245::1682531115::1::::<><>::
 ps4Frames.json::JSON::-1::1682531115::0::1::::<><>::
+ps5.png::CompressedTexture2D::2773447000763862324::1682583889::1682583944::1::::<><>::
+ps5Frames.json::JSON::-1::1682531115::0::1::::<><>::
 xboxOneFrames.json::JSON::-1::1682531115::0::1::::<><>::
 xbox_one.png::CompressedTexture2D::7628775300816445712::1682499245::1682531115::1::::<><>::
-::res://Key Prompts System GDScript/Demo/::1682531202
+xbox_series.png::CompressedTexture2D::7315700634383423435::1682585423::1682585487::1::::<><>::
+::res://Key Prompts System GDScript/Demo/::1682585235
 ground.png::CompressedTexture2D::1999022252334891899::1682499245::1682531115::1::::<><>::
-Level.tscn::PackedScene::4233007199542711863::1682531202::0::1::::<><>::uid://3qlusyypkcqt<>uid://c0sgdf2pp8cv8<>uid://cj3cyrignwy3h
-::res://Key Prompts System GDScript/Demo/Player/::1682531202
+Level.tscn::PackedScene::4233007199542711863::1682585235::0::1::::<><>::uid://3qlusyypkcqt<>uid://c0sgdf2pp8cv8<>uid://cj3cyrignwy3h
+::res://Key Prompts System GDScript/Demo/Player/::1682585235
 block.png::CompressedTexture2D::4540711616448999834::1682499245::1682531115::1::::<><>::
-Player.gd::GDScript::-1::1682531115::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::6565091222277747595::1682531202::0::1::::<><>::res://Key Prompts System GDScript/Demo/Player/Player.gd<>uid://b5xs4euitd38a
+Player.gd::GDScript::-1::1682585043::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::6565091222277747595::1682585235::0::1::::<><>::res://Key Prompts System GDScript/Demo/Player/Player.gd<>uid://b5xs4euitd38a
 ::res://media/::1682531115
 action-example.png::CompressedTexture2D::3976815817604556356::1682499245::1682531115::1::::<><>::
 json-example.png::CompressedTexture2D::3629134880241131652::1682499245::1682531115::1::::<><>::
