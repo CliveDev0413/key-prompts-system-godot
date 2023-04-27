@@ -72,7 +72,7 @@ Add `*.json` to the resources tab
 # Questions you would probably ask
 
 ### Q. How do I customize the look of the prompts?
-Well.. The easiest way I could think of is if you just draw or add images on top of the button prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder which is very tedious. There currently is no fancy system behind this that can make you easily customize the prompt textures.
+Well.. The easiest way I could think of is if you just draw or add images on top of the button prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder which is very tedious. There currently is no fancy system behind-the-scenes that allows you to easily customize the prompt textures.
 
 ### Q. Will you add more controller prompts?
 Hopefully! Though I only got a PS4 controller so I can't test other controller prompts. If you find any bugs, [contact me](https://clivedev.tk)!
