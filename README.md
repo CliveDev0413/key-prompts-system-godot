@@ -10,14 +10,16 @@
 
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
-Implement key/button prompts into Godot easily.
+Implement key/button prompts into Godot easily. This has been upgraded for Godot 4!
 This system currently supports key prompts for:
 
-- Keyboard and mouse
-- PS4 controller
-- Xbox One controller
+- Keyboard and Mouse
+- PS4 Controller
+- PS5 Controller **NEW**
+- Xbox One Controller
+- Xbox Series Controller **NEW**
 
-Xbox One controller prompts will be used for controllers that are unsupported.
+Xbox One Controller prompts will be used for controllers that are unsupported.
 
 You can also download this from the [Itch.io page.](https://clive-dev.itch.io/key-prompts-system-godot)
 
@@ -40,6 +42,10 @@ The action variable is supposed to be set to the name of the action you want the
 6. After setting the action variable, go to the [exporting section](#when-exporting) to know about what to do when exporting your game.
 
 # For the C# verison
+## **NOTICE: The C# version of this asset will not be continued! I will be keeping this guide here for the people that want to use the Godot 3 version!**
+
+---
+
 1. Follow the steps of the GDScript version but instead of using `Key Prompts System GDScript` folder, use the `Key Prompts System CSharp` folder.
 
 Now you have to install the [Newtonsoft Json.Net Nuget Package](https://www.newtonsoft.com/json).
