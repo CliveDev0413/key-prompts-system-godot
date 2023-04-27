@@ -61,11 +61,11 @@ func _ready():
 	using_keyboard = true;
 	process_inputs("none");
 
-func _input(event):
+func _input(event):		
 	if event is InputEventKey:
 		using_keyboard = true;
 		controller_name = "none";
-	elif event is InputEventJoypadButton || event is InputEventJoypadMotion:
+	elif event is InputEventJoypadButton || event is InputEventJoypadMotion && event.axis_value > 0.5:
 		using_keyboard = false;
 		controller_name = Input.get_joy_name(Input.get_connected_joypads().find(event.device))
 

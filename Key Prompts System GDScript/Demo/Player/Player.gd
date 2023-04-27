@@ -12,7 +12,7 @@ var input_vector: Vector2 = Vector2.ZERO;
 
 # Called when the node enters the scene tree for the first time.
 
-func _process(delta):
+func _process(_delta):
 	grounded = is_on_floor();
 
 	motion.y = clamp(motion.y, -JUMP_FORCE, MAX_GRAVITY);

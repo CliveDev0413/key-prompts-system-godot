@@ -9,6 +9,11 @@ size = Vector2(2561, 24)
 
 [node name="Level" type="Node2D"]
 
+[node name="KeyPrompt" parent="." instance=ExtResource("3")]
+position = Vector2(381, 386)
+scale = Vector2(0.3, 0.3)
+ACTION = "jump"
+
 [node name="Player" parent="." instance=ExtResource("2")]
 position = Vector2(467, 427)
 
@@ -30,8 +35,3 @@ offset_top = 374.0
 offset_right = 567.0
 offset_bottom = 414.0
 text = "Press          to jump"
-
-[node name="KeyPrompt" parent="." instance=ExtResource("3")]
-position = Vector2(381, 386)
-scale = Vector2(0.3, 0.3)
-ACTION = "jump"
