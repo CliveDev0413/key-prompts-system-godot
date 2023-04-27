@@ -10,7 +10,7 @@
 
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
-Implement key/button prompts into Godot easily. This has been upgraded for Godot 4!
+Implement key/button prompts into Godot easily. **Now upgraded for Godot 4**!
 
 This system currently supports key prompts for:
 
