@@ -23,7 +23,7 @@ Xbox One Controller prompts will be used for controllers that are unsupported.
 
 You can also download this from the [Itch.io page.](https://clive-dev.itch.io/key-prompts-system-godot)
 
-By the way. I didn't make these key/button prompt textures. I got them from [here](https://thoseawesomeguys.com/prompts/). If you want to help add more key/button prompts to this project, you can also get key/button prompts from there.
+Special thanks to [Those Awesome Guys](https://thoseawesomeguys.com/prompts/) for the button prompt textures!
 
 # Tutorial
 I will now teach you how to implement the key prompt system
@@ -39,7 +39,7 @@ The action variable is supposed to be set to the name of the action you want the
 
 ![action-example](media/action-example.png)
 
-6. After setting the action variable, go to the [exporting section](#when-exporting) to know about what to do when exporting your game.
+6. After setting the action variable, go to the [exporting section](#when-exporting) for instructions on what to do before exporting your game.
 
 # For the C# verison
 > ### **NOTICE: The C# version of this asset will not be continued! I will be keeping this guide here for the people that want to use the Godot 3 version!**
@@ -60,13 +60,10 @@ Add `*.json` to the resources tab
 # Questions you would probably ask
 
 ### Q. How do I customize the look of the prompts?
-Well.. The best and easiest way I could think of is if you just draw or add images on top of the key prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder.
+Well.. The easiest way I could think of is if you just draw or add images on top of the button prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder which is very tedious. There currently is no fancy system behind this that can make you easily customize the prompt textures.
 
 ### Q. Will you add more controller prompts?
-Im not sure. I only have a PS4 controller...
-
-### Q. What will my dinner be...
-Idk, what do you like?
+Hopefully! Though I only got a PS4 controller so I can't test other controller prompts. If you find any bugs, [contact me](https://clivedev.tk)!
 
 # Licensing
 The key/button prompt system is free for commercial and personal projects. You can also remix and edit the code for your personal uses.
