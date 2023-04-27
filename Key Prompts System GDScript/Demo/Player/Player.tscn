@@ -1,21 +1,24 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://c0sgdf2pp8cv8"]
 
-[ext_resource path="res://Key Prompts System GDScript/Demo/Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Key Prompts System GDScript/Demo/Player/block.png" type="Texture" id=2]
+[ext_resource type="Script" path="res://Key Prompts System GDScript/Demo/Player/Player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b5xs4euitd38a" path="res://Key Prompts System GDScript/Demo/Player/block.png" id="2"]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 8, 8 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(16, 16)
 
-[node name="Player" type="KinematicBody2D"]
-script = ExtResource( 1 )
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1")
+GRAVITY = 60.0
+MAX_GRAVITY = 1000.0
+MOVE_SPEED = 200.0
+JUMP_FORCE = 700.0
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
+shape = SubResource("2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true
-zoom = Vector2( 0.5, 0.5 )
-smoothing_enabled = true
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true

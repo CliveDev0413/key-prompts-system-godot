@@ -10,18 +10,21 @@
 
 <p align="center"><img src="/media/keyprompt-showcase.gif" alt="keyprompt-showcase" width="600px" height="338px"></p>
 
-Implement key/button prompts into Godot easily.
+Implement key/button prompts into Godot easily. **Now upgraded for Godot 4**!
+
 This system currently supports key prompts for:
 
-- Keyboard and mouse
-- PS4 controller
-- Xbox One controller
+- Keyboard and Mouse
+- PS4 Controller
+- PS5 Controller **NEW**
+- Xbox One Controller
+- Xbox Series Controller **NEW**
 
-Xbox One controller prompts will be used for controllers that are unsupported.
+Xbox One Controller prompts will be used for controllers that are unsupported.
 
 You can also download this from the [Itch.io page.](https://clive-dev.itch.io/key-prompts-system-godot)
 
-By the way. I didn't make these key/button prompt textures. I got them from [here](https://thoseawesomeguys.com/prompts/). If you want to help add more key/button prompts to this project, you can also get key/button prompts from there.
+Special thanks to [Those Awesome Guys](https://thoseawesomeguys.com/prompts/) for the button prompt textures!
 
 # Tutorial
 I will now teach you how to implement the key prompt system
@@ -37,14 +40,29 @@ The action variable is supposed to be set to the name of the action you want the
 
 ![action-example](media/action-example.png)
 
-6. After setting the action variable, go to the [exporting section](#when-exporting) to know about what to do when exporting your game.
+6. After setting the action variable, go to the [exporting section](#when-exporting) for instructions on what to do before exporting your game.
 
 # For the C# verison
+> ### **NOTICE: The C# version of this asset will not be continued! I will be keeping this guide here for the people that want to use the Godot 3 version!**
+
+---
+
 1. Follow the steps of the GDScript version but instead of using `Key Prompts System GDScript` folder, use the `Key Prompts System CSharp` folder.
 
 Now you have to install the [Newtonsoft Json.Net Nuget Package](https://www.newtonsoft.com/json).
 If you're using Visual Studio Community, just use the Nuget Package Manager.
 If you're using Visual Studio Code, just use [this Nuget Package extension](https://marketplace.visualstudio.com/items?itemName=jmrog.vscode-nuget-package-manager) or look for another one.
+
+# Some things to note
+1. Actions with multiple keys or controller buttons added (e.g. Jump with `Space` or `Up Key`) **do not work**.
+
+![multiple-events](media/multiple-events.png)
+
+2. Actions with physical keys added **do not work**
+
+![physical-keys](media/physical-keys.png)
+
+These are subject to change!
 
 # When exporting
 Add `*.json` to the resources tab
@@ -54,13 +72,10 @@ Add `*.json` to the resources tab
 # Questions you would probably ask
 
 ### Q. How do I customize the look of the prompts?
-Well.. The best and easiest way I could think of is if you just draw or add images on top of the key prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder.
+Well.. The easiest way I could think of is if you just draw or add images on top of the button prompt sprite sheet that you want to customize. If you want to make an entirely different sprite sheet, you gotta edit the json files located in the `ButtonPromptTextures` folder which is very tedious. There currently is no fancy system behind this that can make you easily customize the prompt textures.
 
 ### Q. Will you add more controller prompts?
-Im not sure. I only have a PS4 controller...
-
-### Q. What will my dinner be...
-Idk, what do you like?
+Hopefully! Though I only got a PS4 controller so I can't test other controller prompts. If you find any bugs, [contact me](https://clivedev.tk)!
 
 # Licensing
 The key/button prompt system is free for commercial and personal projects. You can also remix and edit the code for your personal uses.
