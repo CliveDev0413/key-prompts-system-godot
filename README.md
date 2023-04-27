@@ -56,11 +56,11 @@ If you're using Visual Studio Code, just use [this Nuget Package extension](http
 # Some things to note
 1. Actions with multiple keys or controller buttons added (e.g. Jump with `Space` or `Up Key`) **do not work**.
 
-[!multiple-events](media/multiple-events.png)
+![multiple-events](media/multiple-events.png)
 
 2. Actions with physical keys added **do not work**
 
-[!physical-keys](media/physical-keys.png)
+![physical-keys](media/physical-keys.png)
 
 These are subject to change!
 
