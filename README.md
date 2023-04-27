@@ -42,7 +42,7 @@ The action variable is supposed to be set to the name of the action you want the
 6. After setting the action variable, go to the [exporting section](#when-exporting) to know about what to do when exporting your game.
 
 # For the C# verison
-### **NOTICE: The C# version of this asset will not be continued! I will be keeping this guide here for the people that want to use the Godot 3 version!**
+> ### **NOTICE: The C# version of this asset will not be continued! I will be keeping this guide here for the people that want to use the Godot 3 version!**
 
 ---
 
