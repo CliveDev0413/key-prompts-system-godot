@@ -76,7 +76,8 @@ func _input(event):
 func process_inputs(_controller_name):
 	var inputs;
 
-	assert(ACTION != "") ; # Checks if the ACTION variable is assigned
+	# If failed, check if you have set the ACTION variable in the inspector.
+	assert(ACTION != "");
 
 	inputs = InputMap.action_get_events(ACTION);
 
@@ -226,8 +227,8 @@ func hide_all_prompts():
 	xbox_series.visible = false;
 
 func load_json_files():
-	
-	#Checking if the JSON files are okay before reading them
+	# If failed, you probably deleted the JSON files or moved it somewhere else. 
+	# Re-download the files or edit the variables so that the paths actually direct to the JSON files.
 	assert(FileAccess.file_exists(KEYBOARD_FRAMES_JSON_PATH));
 	assert(FileAccess.file_exists(PS4_FRAMES_JSON_PATH));
 	assert(FileAccess.file_exists(PS5_FRAMES_JSON_PATH));
